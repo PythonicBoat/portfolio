@@ -10,8 +10,7 @@ export const metadata = {
   description: "Full Stack Developer",
   image: "/profile.jpg",
   type: "website",
-  siteName: "yashvs",
-  twitterUsername: "@pythonicboat",
+  siteName: "Yashvardhan Singh"
 };
 
 export default function RootLayout({ children }) {
