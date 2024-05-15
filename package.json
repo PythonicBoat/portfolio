@@ -5,14 +5,15 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "next build && next dev",
     "lint": "next lint"
   },
   "dependencies": {
     "@vercel/analytics": "^1.2.2",
-    "next": "14.3.0-canary.9",
-    "react": "^18",
-    "react-dom": "^18"
+    "eslint-config-next": "latest",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest"
   },
   "devDependencies": {
     "typescript": "^5",
