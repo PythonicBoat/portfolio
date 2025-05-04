@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import BentoGrid from './components/BentoGrid';
+import { Analytics } from "@vercel/analytics/react"
 
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <main className="container mx-auto px-4 py-8">
         {/* <Navbar /> */}
         <BentoGrid />
+        <Analytics />
       </main>
     </div>
   );

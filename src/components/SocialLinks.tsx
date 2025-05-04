@@ -70,7 +70,7 @@ const SocialLinks = () => {
         </a>
 
         <a
-          href=""
+          href="https://docs.google.com/document/d/1viwxXuTqoh44MQKRQ6aYofIhIMQZn0pHr9pLqkgCg3c/edit?usp=sharing"
           className="flex items-center gap-2 p-3 bg-[#FFF9F6] rounded-lg transition-all duration-300 hover:translate-x-1"
         >
           <FileText size={16} />
