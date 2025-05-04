@@ -1,7 +1,38 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Code, Terminal } from 'lucide-react';
 
+const roles = ["Product Engineer", "DevOps Developer", "AI Enthusiast"];
+
+const TYPING_SPEED = 70; // ms per character
+const DELAY_BETWEEN_ROLES = 300; // ms after a role is fully typed
+
 const Hero = () => {
+  const [roleIndex, setRoleIndex] = useState(0);
+  const [displayedText, setDisplayedText] = useState("");
+  const [typing, setTyping] = useState(true);
+
+  useEffect(() => {
+    let timeout: NodeJS.Timeout;
+    if (typing) {
+      if (displayedText.length < roles[roleIndex].length) {
+        timeout = setTimeout(() => {
+          setDisplayedText(roles[roleIndex].slice(0, displayedText.length + 1));
+        }, TYPING_SPEED);
+      } else {
+        timeout = setTimeout(() => {
+          setTyping(false);
+        }, DELAY_BETWEEN_ROLES);
+      }
+    } else {
+      timeout = setTimeout(() => {
+        setTyping(true);
+        setDisplayedText("");
+        setRoleIndex((prev) => (prev + 1) % roles.length);
+      }, 500);
+    }
+    return () => clearTimeout(timeout);
+  }, [displayedText, typing, roleIndex]);
+
   return (
     <div id="hero" className="h-full p-4 md:p-6 flex flex-col justify-center relative overflow-hidden">
       <div className="absolute -top-8 -right-8 text-[#FADCD9]/20">
@@ -15,12 +46,11 @@ const Hero = () => {
         <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-2">
           Yashvardhan Singh
         </h1>
-        <div className="overflow-hidden h-10 md:h-12">
-          <div className="animate-slide">
-            <div className="text-lg md:text-xl font-semibold text-[#111827]/90 py-2 tracking-tight">Product Engineer</div>
-            <div className="text-lg md:text-xl font-semibold text-[#111827]/90 py-2 tracking-tight">DevOps Developer</div>
-            <div className="text-lg md:text-xl font-semibold text-[#111827]/90 py-2 tracking-tight">AI Enthusiast</div>
-          </div>
+        <div className="overflow-hidden h-10 md:h-12 flex items-center">
+          <span className="text-lg md:text-xl font-semibold text-[#111827]/90 py-2 tracking-tight">
+            {displayedText}
+            <span className="animate-pulse">|</span>
+          </span>
         </div>
         <p className="mt-4 text-[#111827]/70 max-w-lg text-sm md:text-base">
           Tech for all, AI for everyone.

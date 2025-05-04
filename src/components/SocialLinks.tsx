@@ -6,7 +6,7 @@ const SocialLinks = () => {
 
   useEffect(() => {
     const updateTime = () => {
-      setTime(new Date().toLocaleTimeString('en-US', {timeZone: 'Asia/Kolkata', hour12: false}));
+      setTime(new Date().toLocaleTimeString('en-US', {timeZone: 'Asia/Kolkata', hour12: false}) + " IST");
     };
     
     updateTime();

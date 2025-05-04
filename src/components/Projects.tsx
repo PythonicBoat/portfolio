@@ -48,7 +48,7 @@ const Projects = () => {
                 </span>
               ))}
             </div>
-            <a 
+            <a
               href={project.link}
               className="inline-block text-xs font-medium hover:text-[#FADCD9] transition-colors duration-300"
             >
@@ -57,8 +57,9 @@ const Projects = () => {
           </div>
         ))}
         <div className="flex items-center justify-center h-full">
-          <a 
-            href="#" 
+          <a
+            target="_blank"
+            href="https://github.com/PythonicBoat?tab=repositories"
             className="inline-block px-4 py-2 border border-[#111827] rounded-lg font-medium transition-all duration-300 hover:bg-[#111827] hover:text-[#FFF9F6] text-sm w-full text-center"
           >
             See All Projects
