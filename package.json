@@ -1,7 +1,7 @@
 {
   "name": "bentolio",
   "private": true,
-  "version": "0.1",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -14,8 +14,7 @@
     "@vercel/analytics": "^1.5.0",
     "lucide-react": "^0.344.0",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "three": "^0.176.0"
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.1",

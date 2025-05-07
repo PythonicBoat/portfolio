@@ -20,7 +20,7 @@ const SocialLinks = () => {
     <div className="h-full p-4 md:p-6 flex flex-col justify-between">
       <div className="mb-3 flex justify-between items-center">
         <div>
-          <h2 className="text-lg font-semibold mb-2">Connect</h2>
+          <h2 className="custom-connect-h1 text-lg font-semibold mb-2">Connect</h2>
           <p className="text-[#111827]/70 text-sm mb-2">
             Let's connect and collaborate.
           </p>

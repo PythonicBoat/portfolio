@@ -6,12 +6,12 @@ const About = () => {
     <div id="about" className="h-full p-4 md:p-6 flex flex-col justify-between">
       <div className="flex items-center gap-2 mb-3">
         <User size={18} className="text-[#111827]" />
-        <h2 className="text-lg font-semibold">About Me</h2>
+        <h2 className="custom-connect-h2 text-lg font-semibold">About Me</h2>
       </div>
       
       <div className="flex-1">
         <p className="mb-3 text-[#111827]/80 text-sm">
-        A forward-thinking technologist who thrives at the nexus of innovation and impact. My passion lies in architecting seamless, data-driven ecosystems—from adaptive machine-learning platforms to peer-to-peer networks and cloud-native services—that empower stakeholders with real-time insights and actionable intelligence. I embrace holistically integrated solutions and leverage modern toolchains and scalable frameworks.
+        A pre-final undergrad who thrives at the nexus of innovation and impact. My passion lies in architecting seamless, data-driven ecosystems—from adaptive machine-learning platforms to peer-to-peer networks and cloud-native services—that empower stakeholders with real-time insights and actionable intelligence. I embrace holistically integrated solutions and leverage modern toolchains and scalable frameworks.
         </p>
       </div>
       

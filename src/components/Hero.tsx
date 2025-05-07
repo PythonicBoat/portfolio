@@ -44,13 +44,13 @@ const Hero = () => {
       </div>
       
       <div className="relative z-10">
-        <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-2">
+        <h1 className="custom-hero-h1 text-2xl md:text-3xl lg:text-4xl font-bold mb-2">
           Yashvardhan Singh
         </h1>
         <div className="overflow-hidden h-10 md:h-12 flex items-center">
           <span className="text-lg md:text-xl font-semibold text-[#111827]/90 py-2 tracking-tight">
             {displayedText}
-            <span className="animate-pulse">|</span>
+            <span className="custom-connect-h1 animate-pulse">|</span>
           </span>
         </div>
         {/* <p className="mt-4 text-[#111827]/70 max-w-lg text-sm md:text-base">
