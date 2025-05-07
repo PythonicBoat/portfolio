@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { FileText, Github, Linkedin, Mail, Newspaper, Clock } from 'lucide-react';
 
 const SocialLinks = () => {
-  const [time, setTime] = useState('');
+  const [time, setTime] = useState("");
+  const [showResume, setShowResume] = useState(false);
 
   useEffect(() => {
     const updateTime = () => {
@@ -71,6 +72,8 @@ const SocialLinks = () => {
 
         <a
           href="https://docs.google.com/document/d/1viwxXuTqoh44MQKRQ6aYofIhIMQZn0pHr9pLqkgCg3c/edit?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
           className="flex items-center gap-2 p-3 bg-[#FFF9F6] rounded-lg transition-all duration-300 hover:translate-x-1"
         >
           <FileText size={16} />
