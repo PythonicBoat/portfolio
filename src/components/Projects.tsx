@@ -4,21 +4,21 @@ import { FolderGit2 } from 'lucide-react';
 const Projects = () => {
   const projects = [
     {
-      title: 'TrendBloom',
+      title: 'TrendBloom (upcoming)',
       description: 'Natively harnesses DQN & ESG data streams to deliver live sentiment-aware forecasts and actionable market insights.',
       tags: ['FastAPI', 'ESG', 'Deep Learning', 'Reinforcement Learning', 'Stock Trading'],
       link: '',
     },
     {
       title: 'FLUX',
-      description: 'A platform independent fast and efficient file sharing and compression tool utilizing Meta\'s Zstd compression',
+      description: 'A platform independent fast and efficient file sharing and compression tool utilizing Meta\'s Zstd compression.',
       tags: ['Python', 'Flutter', 'Zstd', 'GUI', 'P2P'],
       link: 'https://github.com/pythonicboat/flux',
     },
     {
       title: 'FileWizard',
-      description: 'A document format converter with a user-friendly interface built upon boto3 library to convert files between various formats',
-      tags: ['AWS', 'Vue.js', 'API', 'File conversion'],
+      description: 'A document format converter with a user-friendly interface built upon boto3 library to convert files between various formats.',
+      tags: ['AWS', 'S3', 'API', 'File conversion'],
       link: 'https://github.com/pythonicboat/file-wizard',
     },
   ];
