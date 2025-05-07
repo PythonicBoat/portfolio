@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Code, Terminal } from 'lucide-react';
+import TechForAll from './TechForAll';
 
 const roles = ["Product Engineer", "DevOps Developer", "AI Enthusiast"];
 
@@ -52,10 +53,11 @@ const Hero = () => {
             <span className="animate-pulse">|</span>
           </span>
         </div>
-        <p className="mt-4 text-[#111827]/70 max-w-lg text-sm md:text-base">
+        {/* <p className="mt-4 text-[#111827]/70 max-w-lg text-sm md:text-base">
           Tech for all, AI for everyone.
-        </p>
-        <div className="mt-6">
+        </p> */}
+        <TechForAll />
+        <div className="mt-6 md:hidden">
           <a 
             href="#projects" 
             className="inline-block px-4 py-2 bg-[#111827] text-[#FFF9F6] rounded-lg font-medium transition-all duration-300 hover:bg-[#111827]/90 hover:translate-y-[-2px] hover:shadow-md text-sm"
