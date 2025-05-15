@@ -58,8 +58,7 @@ const Projects = () => {
         ))}
         <div className="flex items-center justify-center h-full relative">
           <img 
-            src="/loader.png" 
-            alt="Background Pattern" 
+            src="/public/loader.png"
             className="absolute inset-0 w-full h-full object-cover opacity-50 rounded-lg pointer-events-none"
           />
           <a
