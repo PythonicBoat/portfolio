@@ -2,9 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { Code, Terminal } from 'lucide-react';
 import TechForAll from './TechForAll';
 
-const roles = ["Product Engineer", "DevOps Developer", "AI Enthusiast"];
+const roles = ["Systems Engineer", "DevOps Developer", "AI Enthusiast"];
 
-const TYPING_SPEED = 70; // ms per character
+const TYPING_SPEED = 75; // ms per character
 const DELAY_BETWEEN_ROLES = 300; // ms after a role is fully typed
 
 const Hero = () => {
