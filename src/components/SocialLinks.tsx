@@ -22,7 +22,7 @@ const SocialLinks = () => {
         <div>
           <h2 className="custom-connect-h1 text-lg font-semibold mb-2">Connect</h2>
           <p className="text-[#111827]/70 text-sm mb-2">
-            Let's connect and collaborate.
+            Let's connect and collaborate!
           </p>
         </div>
         <div className="flex items-center gap-2 text-[#111827]/80 text-sm">

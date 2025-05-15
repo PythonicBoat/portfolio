@@ -56,13 +56,18 @@ const Projects = () => {
             </a>
           </div>
         ))}
-        <div className="flex items-center justify-center h-full">
+        <div className="flex items-center justify-center h-full relative">
+          <img 
+            src="/loader.png" 
+            alt="Background Pattern" 
+            className="absolute inset-0 w-full h-full object-cover opacity-50 rounded-lg pointer-events-none"
+          />
           <a
             target="_blank"
             href="https://github.com/PythonicBoat?tab=repositories"
-            className="inline-block px-4 py-2 border border-[#111827] rounded-lg font-medium transition-all duration-300 hover:bg-[#111827] hover:text-[#FFF9F6] text-sm w-full text-center"
+            className="inline-block px-4 py-2 border border-[#111827] rounded-lg font-medium transition-all duration-300 hover:bg-[#111827] hover:text-[#FFF9F6] text-sm w-full text-center relative z-10"
           >
-            See All Projects
+            See All Projects →
           </a>
         </div>
       </div>
